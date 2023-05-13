@@ -1,7 +1,5 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns 
-import numpy as np
 from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
