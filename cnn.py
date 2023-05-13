@@ -25,6 +25,7 @@ df = pd.read_csv(r'Telco-Customer-Churn.csv') # Replace it with the path to the 
 X, y = normalize(df)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
+input_shape = X.shape[1]
 model = Sequential()
 model.add(Conv1D(filters=32, kernel_size=3, activation='relu', input_shape=(input_shape, 1)))
 model.add(MaxPooling1D(pool_size=2))

@@ -1,0 +1,4 @@
+pandas
+maptlotlib
+sci-kit learn
+tensorflow
