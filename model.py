@@ -58,6 +58,6 @@ def run():
     ax.set_title('Performance Metrics')
     plt.legend(loc='upper right', fontsize='small')
     plt.xticks(rotation=0, fontsize=5)
-    plt.savefig('Images/plot.png')
+    plt.savefig('Images/Performance_Metrics.png')
 
 run()
