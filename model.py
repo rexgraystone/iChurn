@@ -51,6 +51,9 @@ def train() -> list:
 def run():
     results = train()
     results = results.set_index('Model')
+    print(results)
+    print(results.columns)
+    results.to_csv('results.csv', index=True)
     ax = results.plot(kind='bar')
     ax.set_xlabel('Models', ha='center', fontsize=10)
     ax.set_ylabel('Values')
